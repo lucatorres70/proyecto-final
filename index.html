@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="input_tareas">
+            <input type="text" placeholder="Añadir nueva tarea">
+        </div>
+        <div class="controles">
+            <div class="filtros">
+                <span class="activas" id="todas">Todas</span>
+                <span id="pendientes">Pendientes</span>
+                <span id="completadas">Completadas</span>
+            </div>
+            <button class="borrar_btn">Borrar todo</button>
+        </div>
+        <ul class="lista_tareas">
+            <li class="tarea">
+                <label>
+                    <input type="checkbox" id="1">
+                    <p>Cocinar fideitos</p>
+                </label>
+                <div class="opciones">
+                    <i class="uil uil-ellipsis-h"></i>
+                    <ul class="menu_tareas">
+                        <li> <i class="uil uil-pen">Editar</i></li>
+                        <li> <i class="uil uil-trash">Eliminar</i></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="tarea">
+                <label>
+                    <input type="checkbox" id="1">
+                    <p>Imprimir fotocopias</p>
+                </label>
+                <div class="opciones">
+                    <i class="uil uil-ellipsis-h"></i>
+                </div>
+            </li>
+            <li class="tarea">
+                <label>
+                    <input type="checkbox" id="1">
+                    <p>Limpiar el baño</p>
+                </label>
+                <div class="opciones">
+                    <i class="uil uil-ellipsis-h"></i>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
