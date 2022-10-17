@@ -9,10 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
     <title>To do list</title>
 </head>
 <body>
     <div class="contenedor">
+        <div class="clima"></div>
         <div class="input_tareas">
             <input type="text" placeholder="Añadir nueva tarea">
         </div>
@@ -22,41 +24,9 @@
                 <span id="pendientes">Pendientes</span>
                 <span id="completadas">Completadas</span>
             </div>
-            <button class="borrar_btn">Borrar todo</button>
+            <input type="button" value="Borrar todo" class="borrar_btn">
         </div>
         <ul class="lista_tareas">
-            <li class="tarea">
-                <label>
-                    <input type="checkbox" id="1">
-                    <p>Cocinar fideitos</p>
-                </label>
-                <div class="opciones">
-                    <i class="uil uil-ellipsis-h"></i>
-                    <ul class="menu_tareas">
-                        <li> <i class="uil uil-pen">Editar</i></li>
-                        <li> <i class="uil uil-trash">Eliminar</i></li>
-                    </ul>
-                </div>
-            </li>
-            <li class="tarea">
-                <label>
-                    <input type="checkbox" id="1">
-                    <p>Imprimir fotocopias</p>
-                </label>
-                <div class="opciones">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="tarea">
-                <label>
-                    <input type="checkbox" id="1">
-                    <p>Limpiar el baño</p>
-                </label>
-                <div class="opciones">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-
         </ul>
     </div>
     <script src="main.js"></script>

@@ -21,6 +21,12 @@ body{
     background: #666666;
     border-radius: 7px;
 }
+.clima{
+    margin: 0 25px 10px 25px;
+    padding: 10px;
+    background-color:#b3b3b3;
+    border-radius: 10px;
+}
 .input_tareas{
     height: 52px;
     padding: 0 25px;
@@ -35,8 +41,7 @@ body{
     padding: 0 20px 0 20px;
     border: 1px solid #999;
 }
-/*,
-.input_tareas input.activas*/
+
 .input_tareas input:focus{
     padding-left: 20px;
     border: 2px solid #333333;
@@ -67,7 +72,7 @@ body{
     border-radius: 5px;
     padding: 5px;
 }
-.borrar_btn{
+.controles .borrar_btn{
     border: none;
     opacity: 0.6;
     outline: none;
@@ -76,8 +81,6 @@ body{
     font-size: 13px;
     padding: 7px 13px;
     border-radius: 4px;
-    letter-spacing: 0.3px;
-    pointer-events: none;
     background: #333333;
 } 
 .lista_tareas{
@@ -115,10 +118,11 @@ body{
     align-items: flex-start;
 }
 .tarea{
-    background: #333333;
+    background: #cccccc;
     border-radius: 10px;
     padding: 10px;
 }
+
 .tarea label input{
     margin-top: 7px;
     accent-color: #b3b3b3;
@@ -128,7 +132,7 @@ body{
     margin-left: 12px;
     word-wrap: break-word;
 }
-.tarea label p.completadasi{
+.tarea label p.esta_completada{
     text-decoration: line-through;
 }
 .lista_tareas .opciones{
@@ -147,7 +151,6 @@ body{
     border-radius: 4px;
     transform: scale(0);
     transform-origin: top right;
-    transition: transform 0.2s ease;
 }
 .lista_tareas .task:last-child .menu_tareas{
     bottom: 0;
@@ -157,7 +160,7 @@ body{
     bottom: -65px;
     transform-origin: top right;
 }
-.menu_tareas.show{
+.menu_tareas.mostrar{
     transform: scale(1);
 }
 .menu_tareas li{
